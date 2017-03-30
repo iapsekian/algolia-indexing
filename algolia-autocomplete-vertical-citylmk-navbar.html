@@ -1,0 +1,162 @@
+<div style="padding-top:13px; margin:0px 30px; width: 90%;">
+    <form onsubmit="processSearch()" role="form">
+        <div class="input-group">
+            <input id="aa-search-input" style="background-color: rgba(0,0,0,0);box-shadow: none;border:none;border-bottom: 2px solid cadetblue;" class="form-control" type="text" placeholder="Search your favorite on BookUr.."/>
+                            <span class="input-group-btn"><button class="btn btn-default" type="submit" style="background-color: rgba(0,0,0,0); border: none;">
+                                <span id="btn-search-citylandmark-navbar" class="glyphicon glyphicon-search"></span></button></span>
+        </div>
+    </form>
+</div>
+<script>
+function processSearch(){
+    var e = document.getElementById('aa-search-input');
+    var c = e.value;
+    var o = location.origin;
+    var p = location.pathname;
+    window.location.href = o + '/en/search' + '?query=' + c;
+    //window.location.href = o + p + '?query=' + c;
+}
+
+var client = algoliasearch("86BJDEFD7C", "c48d1003210ae40852c33a253bc0eca3")
+var tours = client.initIndex('BookUrTours');
+var cities = client.initIndex('BookUrCities');
+var attractions = client.initIndex('BookUrAttractions');
+
+autocomplete('#aa-search-input',
+  
+  {debug: false,
+    templates: {
+      dropdownMenu:
+      '<div class="row" style="margin-right: 0px;margin-left: 0px;">' +
+      '<div class="aa-dataset-cities col-xs-12"></div>' +
+      '</div>' +
+      '<div class="row" style="margin-right: 0px;margin-left: 0px;">' +
+      '<div class="aa-dataset-attractions col-xs-12"></div>' +
+      '</div>' +
+      '<div class="row" style="margin-right: 0px;margin-left: 0px;">' +
+      '<div class="aa-dataset-tours col-xs-12"></div>' +
+      '</div>'
+    }
+  },   
+  [
+    {
+      source: autocomplete.sources.hits(cities, { hitsPerPage: 3 }),
+      displayKey: 'text',
+      name: 'cities',
+      templates: {
+        header: '<div class="aa-suggestions-category">City</div>',
+        suggestion: function(suggestion) {
+          return '<span>' + suggestion._highlightResult.text.value + ' ' + '</span>'
+                +'<span style="font-size: 10px;margin-left: 5px;color: rgba(128, 128, 128, 0.5);">' + suggestion.country  + '</span>';
+        },
+        empty: '<div class="aa-empty">No matching cities</div>'
+      }
+    },
+    {
+      source: autocomplete.sources.hits(attractions, { hitsPerPage: 5 }),
+      displayKey: 'text',
+      name: 'attractions',
+      templates: {
+        header: '<div class="aa-suggestions-category">Attractions</div>',
+        suggestion: function(suggestion) {
+          return '<div class="row">'
+                    +'<div class="col-xs-2 searchImage">'
+                        +'<img class="img-rounded" style="width:100%; max-height: 6vh; object-fit:cover" src="' + suggestion.photoPath + '">'
+                    +'</div>' 
+                    + '<div class="col-xs-10">'
+                        +'<span>' + suggestion._highlightResult.text.value + ' ' + '</span><span style="font-size: 10px;margin-left: 5px;color: rgba(128, 128, 128, 0.5);">'+ suggestion.city + '</span>'
+                    +'</div>'
+                +'</div>';
+        },
+        empty: '<div class="aa-empty">No matching attractions</div></div>'
+      }
+    },
+    {
+      source: autocomplete.sources.hits(tours, { hitsPerPage: 7 }),
+      displayKey: 'text',
+      name: 'tours',
+      templates: {
+        header: '<div class="aa-suggestions-category">Tours</div>',
+        suggestion: function(suggestion) {
+          return '<div class="row">'
+                    +'<div class="col-xs-2 searchImage">'
+                        +'<img class="img-rounded" style="object-fit: cover; width:100%; max-height: 6vh;" src="' + suggestion.photoPath + '">'
+                    +'</div>' 
+                    + '<div class="col-xs-8">'
+                        +'<span>' + suggestion._highlightResult.text.value + ' ' + '</span><span style="font-size: 10px;margin-left: 5px;color: rgba(128, 128, 128, 0.5);">'+ suggestion.city + '</span>'
+                    + '</div>'
+                    +'<div class="col-xs-2">'
+                        +'<span style="font-size: 10px;">' + suggestion.currency + ' ' + suggestion.advertisedPrice + '</span>'
+                    +'</div>'
+                +'</div>';
+        },
+        empty: '<div class="aa-empty">No matching tours</div>'
+      }
+    }
+]);
+</script>
+<style type="text/css">
+.aa-input-container {
+  display: inline-block;
+  position: relative; }
+.aa-input-search {
+  width: 300px;
+  padding: 12px 28px 12px 12px;
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+  .aa-input-search::-webkit-search-decoration, .aa-input-search::-webkit-search-cancel-button, .aa-input-search::-webkit-search-results-button, .aa-input-search::-webkit-search-results-decoration {
+    display: none; }
+.aa-input-icon {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  fill: #e4e4e4;
+  pointer-events: none; }
+.aa-suggestion {
+  padding: 6px 12px;
+  cursor: pointer;}
+.aa-suggestions-category {
+  background-color: rgba(128, 128, 128, 0.2);
+  font-weight: bold;
+  border-bottom: 2px solid rgba(228, 228, 228, 0.6);
+  border-top: 2px solid rgba(228, 228, 228, 0.6);
+  padding: 6px 12px; }
+.aa-dropdown-menu {
+  left:-10% !important;
+  background-color: #fff;
+  border: 2px solid rgba(228, 228, 228, 0.6);
+  min-width: 40vw;;
+  margin-top: 10px;
+  box-sizing: border-box;
+    height:90vh;
+    overflow-y:scroll;
+}
+  .aa-dropdown-menu > div {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top; }
+.aa-empty {
+  padding: 6px 12px; }
+.searchImage{
+    padding-left:10px ;
+    padding-right:0px ;}
+.aa-dataset-cities{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.aa-dataset-attractions{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.aa-dataset-tours{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+</style>

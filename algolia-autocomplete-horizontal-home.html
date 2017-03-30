@@ -1,0 +1,154 @@
+<div style="margin-bottom: 1vh;position: absolute;top: 40%; width: 100%">
+    <form onsubmit="processSearch()" role="form">
+        <div class="input-group">
+            <input id="aa-search-input" style="font-weight: 300; color=darkgray;font-size:120%" class="form-control" type="text" placeholder="Search city, attraction, and tours information."/>
+                            <span class="input-group-btn"><button class="btn btn-default" type="submit">
+                                <span id="btn-search-home-bgimg" class="glyphicon glyphicon-search"></span></button></span>
+        </div>
+    </form>
+</div>
+<script>
+function processSearch(){
+    var e = document.getElementById('aa-search-input');
+    var c = e.value;
+    var o = location.origin;
+    var p = location.pathname;
+    window.location.href = o + '/en/search' + '?query=' + c;
+}
+
+var client = algoliasearch("86BJDEFD7C", "c48d1003210ae40852c33a253bc0eca3")
+var tours = client.initIndex('BookUrTours');
+var cities = client.initIndex('BookUrCities');
+var attractions = client.initIndex('BookUrAttractions');
+
+autocomplete('#aa-search-input', {debug: false,  templates: {
+    dropdownMenu:
+    '<div class="aa-dataset-tours col-sm-6"></div>' +
+    '<div class="aa-dataset-cities col-sm-2"></div>' +
+    '<div class="aa-dataset-attractions col-sm-4"></div>'
+    }}, [
+    {
+      source: autocomplete.sources.hits(tours, { hitsPerPage: 7 }),
+      displayKey: 'text',
+      name: 'tours',
+      templates: {
+        header: '<div class="aa-suggestions-category">Tours</div>',
+        suggestion: function(suggestion) {
+          return '<div class="col-sm-2 searchImage"><img class="img-rounded" style="width:100%;height:100%;" src="' + suggestion.photoPath + '"></div>' + '<div class="col-sm-8"><span>' +
+            suggestion._highlightResult.text.value + '</span></div><div class="col-sm-2"><span>'
+//              + suggestion.productType + ' '
+              + suggestion.currency + ' '
+              + suggestion.advertisedPrice + '</span></div>';
+        },
+        empty: '<div class="aa-empty">No matching tours</div>'
+      }
+    },
+    {
+      source: autocomplete.sources.hits(cities, { hitsPerPage: 7 }),
+      displayKey: 'text',
+      name: 'cities',
+      templates: {
+        header: '<div class="aa-suggestions-category">City</div>',
+        suggestion: function(suggestion) {
+          return '<div class="col-sm-5 searchImage"><img class="img-rounded" style="width:100%;height:100%;" src="' + suggestion.photoPath + '"></div>' + '<div class="col-sm-7"><span>' +
+            suggestion._highlightResult.text.value + '</span></div>';
+//            +'<div class="col-sm-2"><span>'
+//            + suggestion.country 
+//            + '</span></div>';
+        },
+        empty: '<div class="aa-empty">No matching cities</div>'
+      }
+    },
+    {
+      source: autocomplete.sources.hits(attractions, { hitsPerPage: 7 }),
+      displayKey: 'text',
+      name: 'attractions',
+      templates: {
+        header: '<div class="aa-suggestions-category">Attractions</div>',
+        suggestion: function(suggestion) {
+          return '<div class="col-sm-3 searchImage"><img class="img-rounded" style="width:100%;height:100%;" src="' + suggestion.photoPath + '"></div>' + '<div class="col-sm-6"><span>' +
+            suggestion._highlightResult.text.value + '</span></div><div class="col-sm-3"><span>'
+              + suggestion.city 
+              + '</span></div>';
+        },
+        empty: '<div class="aa-empty">No matching attractions</div>'
+      }
+    }
+]);
+</script>
+<style type="text/css">
+.aa-input-container {
+  display: inline-block;
+  position: relative; }
+.aa-input-search {
+  width: 300px;
+  padding: 12px 28px 12px 12px;
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+  .aa-input-search::-webkit-search-decoration, .aa-input-search::-webkit-search-cancel-button, .aa-input-search::-webkit-search-results-button, .aa-input-search::-webkit-search-results-decoration {
+    display: none; }
+.aa-input-icon {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  fill: #e4e4e4;
+  pointer-events: none; }
+.aa-dropdown-menu {
+  background-color: #fff;
+  border: 2px solid rgba(228, 228, 228, 0.6);
+  left:-85% !important;
+  min-width: 300px;
+  margin-top: 10px;
+  box-sizing: border-box; }
+.aa-suggestion {
+  padding: 6px 12px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;}
+  /*.aa-suggestion > img {
+      width: 80px;
+      height: 45px;
+      margin-right: 10px;
+  }*/
+.aa-suggestion > div {
+      /*width: 100%;*/
+      display: flex;
+      justify-content: space-between;
+      -webkit-box-pack: justify;
+      -webkit-box-align: center;
+      align-items: center;
+  }
+.aa-suggestions-category {
+  border-bottom: 2px solid rgba(228, 228, 228, 0.6);
+  border-top: 2px solid rgba(228, 228, 228, 0.6);
+  padding: 6px 12px; }
+.aa-dropdown-menu {
+  min-width: 85vw; }
+  .aa-dropdown-menu > div {
+    display: inline-block;
+    vertical-align: top; }
+.aa-empty {
+  padding: 6px 12px; }
+.searchImage{
+    padding-left:0px ;
+    padding-right:5px ;
+    height:6vh;
+}
+.aa-dataset-tours{
+    border:none;
+    padding:5px;
+}
+.aa-dataset-cities{
+    padding:5px;
+}
+.aa-dataset-attractions{
+    padding:5px;
+}
+</style>
