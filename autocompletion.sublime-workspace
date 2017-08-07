@@ -1,0 +1,888 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"insert",
+				"insertSub\tbool "
+			],
+			[
+				"st",
+				"stringify\tfn "
+			],
+			[
+				"l",
+				"logs/"
+			],
+			[
+				"sup",
+				"supplierInfo\t{} "
+			],
+			[
+				"arr",
+				"arrayJsonProducts\t[] "
+			],
+			[
+				"wait4",
+				"wait4ApiBasicDataEnd\tfn "
+			],
+			[
+				"op",
+				"opMarketPlaceId\tnum "
+			],
+			[
+				"api",
+				"apiBasicDataCount\tnum "
+			],
+			[
+				"exist",
+				"existingSuppliers\t[] "
+			],
+			[
+				"tourl",
+				"tourleader_type\t{} "
+			],
+			[
+				"img",
+				"imgUrlParts\t{} "
+			],
+			[
+				"imgU",
+				"imgUrlParts\t? "
+			],
+			[
+				"apiRe",
+				"apiResponse\t? "
+			],
+			[
+				"get",
+				"get\t.get()"
+			],
+			[
+				"add",
+				"addFlag\tbool "
+			],
+			[
+				"tour",
+				"tourDetailsCount\t? "
+			],
+			[
+				"show",
+				"showAllTours\tfn "
+			],
+			[
+				"tours",
+				"toursCount\t? "
+			],
+			[
+				"cons",
+				"console.log();"
+			],
+			[
+				"chan",
+				"channelDetails\t[] "
+			],
+			[
+				"write",
+				"fs.writeFileSync(path, data, options);"
+			],
+			[
+				"TourCMS",
+				"TourCMSApi\t? "
+			],
+			[
+				"themes",
+				"themesMapping\t{} "
+			],
+			[
+				"unde",
+				"undefined\t? "
+			],
+			[
+				"content",
+				"contentTypeName\tstr "
+			],
+			[
+				"isnu",
+				"util.isNullOrUndefined(arg);"
+			],
+			[
+				"par",
+				"parse\tfn "
+			],
+			[
+				"getUT",
+				"getUTCMinutes\tfn "
+			],
+			[
+				"getUTC",
+				"getUTCMinutes\tfn "
+			],
+			[
+				"days",
+				"daysHours\tstr "
+			],
+			[
+				"taxonomyPro",
+				"taxonomyProductCode"
+			],
+			[
+				"fs",
+				"fs.readFile(path, options, callback_);"
+			],
+			[
+				"request",
+				"https.request(options, cb);"
+			],
+			[
+				"ajax",
+				"ajaxSettings"
+			],
+			[
+				"crea",
+				"createElement"
+			],
+			[
+				"w",
+				"wType"
+			],
+			[
+				"com",
+				"compile"
+			],
+			[
+				"me",
+				"mediaId"
+			],
+			[
+				"sce",
+				"sce"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"re",
+				"readFile"
+			],
+			[
+				"out",
+				"outputFile"
+			],
+			[
+				"sour",
+				"sourceFile"
+			],
+			[
+				"file",
+				"file"
+			],
+			[
+				"cont",
+				"content1"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "jsonformat.json",
+			"settings":
+			{
+				"buffer_size": 1487,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "algolia.js",
+			"settings":
+			{
+				"buffer_size": 910,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "algolia-city.js",
+			"settings":
+			{
+				"buffer_size": 135124,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "algolia-tours.js",
+			"settings":
+			{
+				"buffer_size": 135479,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 207.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"PackageResourceViewer",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"converto",
+				"ConvertToUTF8: Reload with Encoding"
+			],
+			[
+				"node",
+				"Nodejs::Default File Settings"
+			],
+			[
+				"Snippet: j",
+				"Snippet: jQuery.ajax"
+			],
+			[
+				"Package Control: remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Install Package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 746.0
+	},
+	"console":
+	{
+		"height": 201.0,
+		"history":
+		[
+			"node",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/casper/code/algolia-indexing",
+		"/Users/casper/code/algolia-indexing/node_modules",
+		"/Users/casper/code/algolia-indexing/node_modules/bookur-util"
+	],
+	"file_history":
+	[
+		"/Users/casper/code/algolia-indexing/algolia-autocomplete-vertical-WHS.html",
+		"/Users/casper/code/algolia-indexing/algolia.css",
+		"/Users/casper/code/wikipedia-to-mongodb/index.js",
+		"/Users/casper/code/wikipedia-to-mongodb/importWikivoyage.js",
+		"/Users/casper/code/wikipedia-to-mongodb/node_modules/wtf_wikipedia/src/parse/parse_image.js",
+		"/Users/casper/code/wikipedia-to-mongodb/db/Paris.json",
+		"/Users/casper/code/wikipedia-to-mongodb/db/London.json",
+		"/Users/casper/code/wikipedia-to-mongodb/db/NewYorkCity.json",
+		"/Users/casper/code/wikipedia-to-mongodb/node_modules/wtf_wikipedia/src/parse/cleanup_misc.js",
+		"/Users/casper/code/wikipedia-to-mongodb/node_modules/wtf_wikipedia/src/parse/kill_xml.js",
+		"/Users/casper/code/wikipedia-to-mongodb/node_modules/wtf_wikipedia/src/word_templates.js",
+		"/Users/casper/code/wikipedia-to-mongodb/node_modules/wtf_wikipedia/src/parse/parse_categories.js",
+		"/Users/casper/code/wikipedia-to-mongodb/output.js",
+		"/Users/casper/code/wikipedia-to-mongodb/dataSet.json",
+		"/Users/casper/code/wikipedia-to-mongodb/node_modules/wtf_wikipedia/src/data/i18n.js",
+		"/Users/casper/code/wikipedia-to-mongodb/node_modules/wtf_wikipedia/src/recursive_matches.js",
+		"/Users/casper/code/wikipedia-to-mongodb/lodon.txt",
+		"/Users/casper/code/wvinfo-import/data/sample-dump1.xml",
+		"/Users/casper/code/wikipedia-to-mongodb/node_modules/wtf_wikipedia/src/lib/sentence_parser.js",
+		"/Users/casper/code/wikipedia-to-mongodb/node_modules/wtf_wikipedia/src/parse/parse_links.js",
+		"/Users/casper/code/wikipedia-to-mongodb/node_modules/wtf_wikipedia/src/lib/helpers.js",
+		"/Users/casper/code/wikipedia-to-mongodb/node_modules/wtf_wikipedia/src/parse/parse_line.js",
+		"/Users/casper/code/wikipedia-to-mongodb/node_modules/wtf_wikipedia/src/parse/parse_infobox.js",
+		"/Users/casper/code/wikipedia-to-mongodb/helper.js",
+		"/Users/casper/code/wikipedia-to-mongodb/node_modules/wtf_wikipedia/src/parse/parse_disambig.js",
+		"/Users/casper/code/wikipedia-to-mongodb/node_modules/wtf_wikipedia/src/parse/parse_redirects.js",
+		"/Users/casper/code/wvinfo-import/data/sample-dump.xml",
+		"/Users/casper/code/wikipedia-to-mongodb/node_modules/wtf_wikipedia/src/parse/parse_table.js",
+		"/Users/casper/code/wikipedia-to-mongodb/package.json",
+		"/Users/casper/code/wikipedia-to-mongodb/node_modules/wtf_wikipedia/src/index.js",
+		"/Users/casper/code/wtf_wikipedia/src/index.js",
+		"/Users/casper/code/wtf_wikipedia/src/data/i18n.js",
+		"/Users/casper/code/wtf_wikipedia/src/parse/parse_redirects.js",
+		"/Users/casper/code/wtf_wikipedia/src/data/site_map.js",
+		"/Users/casper/code/wtf_wikipedia/src/word_templates.js",
+		"/Users/casper/code/wtf_wikipedia/src/parse/kill_xml.js",
+		"/Users/casper/code/wtf_wikipedia/src/parse/cleanup_misc.js",
+		"/Users/casper/code/wtf_wikipedia/package.json",
+		"/Users/casper/code/wtf_wikipedia/src/data/languages.js",
+		"/Users/casper/code/wvinfo-import/node_modules/parsoid/bin/parse.js",
+		"/Users/casper/code/wvinfo-import/node_modules/parsoid/lib/index.js",
+		"/Users/casper/code/wvinfo-import/sample-dump1.json",
+		"/Users/casper/code/wvinfo-import/parseWikitextTest.js",
+		"/Users/casper/code/wvinfo-import/sample-dump.json",
+		"/Users/casper/code/wvinfo-import/node_modules/parsoid/lib/config/ParsoidConfig.js",
+		"/Users/casper/code/wvinfo-import/sample-dump1.html",
+		"/Users/casper/code/wvinfo-import/node_modules/parsoid/guides/apiuse/README.md",
+		"/Users/casper/code/wvinfo-import/package.json",
+		"/Users/casper/code/rezdy-data/package.json",
+		"/Users/casper/code/tcms-data/wikidata/s-Gravenhage.txt",
+		"/Users/casper/code/tcms-data/wikidata/Q90.json",
+		"/Users/casper/code/tcms-data/wikidata/Q17442550.json",
+		"/Users/casper/code/tcms-data/wikidata/Q5276041.json",
+		"/Users/casper/code/tcms-data/wikidata/Q2001Claims.json",
+		"/Users/casper/code/tcms-data/wikidata/Q2001.json",
+		"/var/folders/cw/hqp5z38j7y9g5wyq6x4lppgc0000gn/T/sublime-sftp-browse-1497498377/tst.tourbooks.cc/var/www/rubedo/module/Rubedo/src/Rubedo/Collection/Emails.php",
+		"/var/folders/cw/hqp5z38j7y9g5wyq6x4lppgc0000gn/T/sublime-sftp-browse-1497498546/tst.tourbooks.cc/var/www/rubedo/module/Rubedo/src/Rubedo/Backoffice/Controller/EmailsController.php",
+		"/Users/casper/code/tcms-data/logs/arrayJsonProducts.json",
+		"/Users/casper/code/tcms-data/logs/arrayJsonSuppliers.json",
+		"/Users/casper/code/tcms-data/lib/bookurUtil.js",
+		"/Users/casper/code/tcms-data/lib/tcmsUtil.js",
+		"/Users/casper/code/tcms-data/trial/showSuppliersOP.js",
+		"/Users/casper/code/tcms-data/logs/showSuppliersOP.json",
+		"/Users/casper/code/tcms-data/logs/showToursOP.json",
+		"/Users/casper/code/tcms-data/logs/listToursOP.json",
+		"/Users/casper/code/tcms-data/logs/contents-TEST2.json",
+		"/Users/casper/code/tcms-data/logs/contents-TEST21.json",
+		"/Users/casper/code/tours-merging/updateToursTXTourTypeCategory.js",
+		"/Users/casper/code/tcms-data/mapping/type.json",
+		"/Users/casper/code/tcms-data/trial/showToursOP.js",
+		"/Users/casper/code/tcms-data/lib/getTaxonomies.js",
+		"/Users/casper/code/tcms-data/lib/getContents.js",
+		"/Users/casper/code/tcms-data/lib/getContentTypeId.js",
+		"/Users/casper/code/tcms-data/lib/getTXTermsMap.js",
+		"/Users/casper/code/tcms-data/node_modules/tourcms/node-tourcms.js",
+		"/Users/casper/code/tcms-data/trial/listToursOP.js",
+		"/Users/casper/code/tcms-data/trial/listChannels.js",
+		"/Users/casper/code/tcms-data/trial/showChannels.js",
+		"/Users/casper/code/tcms-data/trial/listTours.js",
+		"/Users/casper/code/tcms-data/logs/listTours.json",
+		"/Users/casper/code/tcms-data/trial/showChannelsOP.js",
+		"/Users/casper/code/tcms-data/logs/showChannelsOP.json",
+		"/Users/casper/code/tcms-data/logs/listChannels.json",
+		"/Users/casper/code/tcms-data/logs/showChannels.json",
+		"/Users/casper/code/tcms-data/trial/listChannelsOP.js",
+		"/Users/casper/code/tcms-data/logs/listChannelsOP.json",
+		"/Users/casper/code/tcms-data/trial/showChanels.js",
+		"/Users/casper/code/tcms-data/.gitignore",
+		"/Users/casper/code/tcms-data/lib/mapping-util.js",
+		"/Users/casper/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/casper/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/casper/code/tcms-data/trial/listChanels.js",
+		"/Users/casper/code/tcms-data/trial/listChannels.json",
+		"/Users/casper/code/tcms-data/trial/listToursOP.json",
+		"/Users/casper/code/tcms-data/trial/listChanelsOP.js",
+		"/Users/casper/code/tcms-data/trial/listTours.json",
+		"/Users/casper/code/tcms-data/trial/showChannels.json",
+		"/var/folders/cw/hqp5z38j7y9g5wyq6x4lppgc0000gn/T/sublime-sftp-browse-1492160091/59.125.189.209/var/log/apache2/bookur-error.log",
+		"/Users/casper/code/tcms-data/node_modules/xml2js/lib/xml2js.js",
+		"/Users/casper/code/tcms-data/node_modules/xml2js/package.json",
+		"/var/folders/cw/hqp5z38j7y9g5wyq6x4lppgc0000gn/T/sublime-sftp-browse-1492148106/59.125.189.209/home/casper/pdump/var/www/publicDiff.txt",
+		"/var/folders/cw/hqp5z38j7y9g5wyq6x4lppgc0000gn/T/sublime-sftp-browse-1492148000/59.125.189.209/home/casper/pdump/var/www/publicDiff.txt",
+		"/Users/casper/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/59.125.189.209",
+		"/Users/casper/code/tcms-data/package.json",
+		"/var/folders/cw/hqp5z38j7y9g5wyq6x4lppgc0000gn/T/sublime-sftp-browse-1491982879/59.125.189.209/home/casper/progress_file",
+		"/var/folders/cw/hqp5z38j7y9g5wyq6x4lppgc0000gn/T/sublime-sftp-browse-1491982348/59.125.189.209/home/casper/conf",
+		"/var/folders/cw/hqp5z38j7y9g5wyq6x4lppgc0000gn/T/sublime-sftp-browse-1491982034/59.125.189.209/home/casper/install-rubedo-3.3.x.sh",
+		"/var/folders/cw/hqp5z38j7y9g5wyq6x4lppgc0000gn/T/sublime-sftp-browse-1491982267/59.125.189.209/home/casper/ri",
+		"/var/folders/cw/hqp5z38j7y9g5wyq6x4lppgc0000gn/T/sublime-sftp-browse-1491986340/59.125.189.209/etc/apache2/sites-available/000-default.conf",
+		"/Users/casper/code/taipei.json",
+		"/Users/casper/code/rezdy-data/main.js",
+		"/Users/casper/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/59.125.189.205",
+		"/Users/casper/Library/Application Support/Sublime Text 3/Packages/SFTP/SFTP.sublime-settings",
+		"/Users/casper/Library/Application Support/Sublime Text 3/Packages/User/SFTP.sublime-settings",
+		"/var/folders/cw/hqp5z38j7y9g5wyq6x4lppgc0000gn/T/sublime-sftp-browse-1491873460/tst.tourbooks.cc/var/log/apache2/rubedo-error.log",
+		"/var/folders/cw/hqp5z38j7y9g5wyq6x4lppgc0000gn/T/sublime-sftp-browse-1491873550/tst.tourbooks.cc/etc/apache2/sites-available/040-tourbookscom.conf",
+		"/var/folders/cw/hqp5z38j7y9g5wyq6x4lppgc0000gn/T/sublime-sftp-browse-1491873654/tst.tourbooks.cc/etc/apache2/sites-available/010-rubedo.conf",
+		"/var/folders/cw/hqp5z38j7y9g5wyq6x4lppgc0000gn/T/sublime-sftp-browse-1491873672/tst.tourbooks.cc/var/log/apache2/rubedo-access.log",
+		"/Users/casper/Library/Application Support/Sublime Text 3/Packages/Nodejs/Nodejs.py",
+		"/Users/casper/code/rezdy-data/checkbox.html",
+		"/Users/casper/code/rezdy-data/default.html",
+		"/Users/casper/code/rezdy-data/ccMap.json",
+		"/Users/casper/code/Q5119.json",
+		"/Users/casper/Library/Application Support/Sublime Text 3/Packages/LiveStyle/LiveStyle.sublime-settings",
+		"/Users/casper/Library/Application Support/Sublime Text 3/Packages/User/LiveStyle.sublime-settings",
+		"/Users/casper/code/rezdy-data/algolia.js",
+		"/Users/casper/code/rezdy-data/syncThemesWithTours.js",
+		"/Users/casper/pagetitle.json"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"fetch",
+			"By train",
+			"===",
+			"By plane",
+			"By plane===",
+			"===By plane===",
+			"Central London",
+			"===",
+			"hasText",
+			"appendSectionLabelsWithParent",
+			"images",
+			"sectionStack",
+			"parse_line",
+			"{{",
+			"parse_image",
+			"--",
+			"{{",
+			"appendSectionLabelsWithParent",
+			"output",
+			"parse",
+			"yargs",
+			"enwikivoy",
+			"export",
+			"get in",
+			"\\r",
+			"arrayJsonSuppliers",
+			"item",
+			"jsonSuppliers",
+			"arrayJsonSuppliers",
+			"taxonomySupplierId",
+			"existingToursProducts",
+			"existingProducts",
+			"\"_id\"",
+			"var",
+			"rtoursContents",
+			"rtoursTypeId",
+			"var",
+			"taxonomySupplierId",
+			"taxonomyNavigation",
+			"taxonomyVocabularyId",
+			"contentTypeId",
+			"getTourImageSecure",
+			" - ",
+			"var",
+			"concat",
+			"xml",
+			"makeRequest",
+			"qs",
+			"makeRequest",
+			"channelId",
+			"hostname",
+			"supplier_id",
+			"var",
+			"PHP_PACKAGES_UBUNTU14",
+			"PHP_PACKAGES",
+			"PHP_PACKAGES_UBUNTU14",
+			"contentTypeId.product",
+			"Q5119",
+			"break point",
+			"col-sm-1",
+			"max-width",
+			"@media (min-width: 768px)",
+			".col-xs-1",
+			"@media (min-width: 768px)",
+			"@media",
+			"aa-search-input",
+			"processSearch",
+			"-sm-",
+			"tmp.lon",
+			"tmp.lat",
+			"teams",
+			"players",
+			"NaN",
+			"N",
+			"3694",
+			"undefined",
+			"Blank",
+			"NumberInt",
+			"tmp.lon",
+			"locationAddress",
+			"attraction",
+			"rubedoCustomTemplate",
+			"rubedo-custom-template",
+			"Varkala",
+			"THEKKADY",
+			"jsonProducts",
+			"arrayJsonProducts",
+			"###",
+			"searchSelector",
+			"-new",
+			"undefined",
+			"rezdyResizeIframe",
+			"findRezdyIframes",
+			"href",
+			"console.log",
+			"wait4MDBRecordsGenComplete",
+			"genTourProductRecords",
+			"wait4MDBRecordsGenComplete",
+			"stage2Save2MDB",
+			"productRecordsGenComplete",
+			"supplierRecordsGenComplete",
+			"supplierAliasFromProducts",
+			"586df55fa0af88a741bcb6b5",
+			"allSupplierId",
+			"txt",
+			"taxonomyProductCode",
+			"setProductTaxonomy",
+			"supplierAliasFromProducts",
+			"jsonSuppliers",
+			"arrayJsonSuppliers",
+			"existingToursProducts",
+			"existingProducts",
+			"arrayJsonToursProducts",
+			"CheckList",
+			"crudUser",
+			"version",
+			"insert",
+			"check",
+			"wait4PutOfflineProductComplete",
+			"wait4PutOfflneProductComplete",
+			"wait4IUBothComplete",
+			"operateDB",
+			"auto_complete_selector",
+			"<",
+			"[",
+			"<p ",
+			"home"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"country",
+			"-v2"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/Users/casper/code/wikipedia-to-mongodb",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "jsonformat.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1487,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1483,
+								1483
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "algolia.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 910,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "algolia-city.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 135124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								268,
+								268
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "algolia-tours.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 135479,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								133486,
+								133486
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 246.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.nodejs":
+	{
+		"height": 100.0
+	},
+	"output.sftp":
+	{
+		"height": 159.0
+	},
+	"pinned_build_system": "Packages/Nodejs/Nodejs.sublime-build",
+	"project": "autocompletion.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/code/wvinfo-import/wvinfo-import.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 329.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
